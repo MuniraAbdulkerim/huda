@@ -1,80 +1,72 @@
-*{
-font-family: Roboto, sans-serif; font-family: playfair display,sans-serif;  
-padding: 0;
-margin: 0;
-  
+/* Global Styles */
+* {
+  font-family: Roboto, sans-serif, 'Playfair Display', sans-serif;
+  padding: 0;
+  margin: 0;
+
 }
-header{
+body {
+  position: sticky; 
+  top: 0;
+  margin: 0;
+
+}
+#rotating-image {
+  width: 100%;
+  height: 100vh;
+  transition: opacity 3s ease-in-out; /* Smooth transition of opacity over 1 second */
+  opacity: 1; /* Set initial opacity */
+}
+
+.hidden {
+  opacity: 0; /* Fully transparent when hidden */
+}
+
+
+
+/* Header Styling */
+header {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  background-color: rgba(0,85,90,255);
+  background-color: rgba(0, 85, 90, 1);
   height: 90px;
   overflow: hidden;
-  position: fixed;
-  top: 0;
   left: 0;
   width: 100%;
   z-index: 999;
+  position: relative; 
+  top: 0;
+}
 
-}
-.logo img{
-  width: 180px;
-  height: 180px;
-  margin-left: 10px;
-  
-}
-.navigation ul{
-  display: flex;
-  list-style: none;
-  margin: 0;
-  padding: 0;
-}
-.navigation li{
-  margin-right: 50px;
- 
 
-}
-.navigation a{
-font-family: Arial, Helvetica, sans-serif;
-  text-decoration: none;
-  color: white;
-  font-weight: 500;
-  font-size: 17px;
-}
-.navigation a:hover{
-  color: yellow;
-}
+
 .top-pic{
   display: flex;
   justify-content: space-between;
   text-align: center;
   align-items: center;
-  height: 500px;
+  height: 0px;
 }
  
  .sec img{
-  height: 500px;
+  height: 100vh;
   width: 100%;
  }
  .sec{
-  margin-top: 80px;
+  position: relative; 
+  margin-top: 0px;
   width: 100%;
-  height: 460px;
+  height: 100vh;
+
   object-fit: contain;
-  position: relative;
   overflow: hidden;
   
  }
- .overlay{
- width: 700px;
-position: absolute;
-top: 40%;
-margin-left: 40px;
-left: 0;
+
 
   
- }
+ 
  .overlay h1{
   font-weight: 700;
   font-size: 50px;
@@ -294,6 +286,7 @@ text-align: center;
 }
 .story{
   margin-top: 120px;
+  margin-bottom: 300px;
   position: relative;
   
   
@@ -359,3 +352,74 @@ font-size: 23px;
   padding: 10px 30px;
 }
 
+
+    /* Section and image styling */
+    .sec {
+      position: relative;
+      width: 100%;
+      height: 100vh; /* Adjust as needed */
+    }
+
+    .sec img {
+      width: 100%;
+      height: 100vh;
+      object-fit: cover;
+    }
+
+    .overlay {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      background: rgb(0, 0, 0); /* Dark overlay */
+      font-weight: 700;
+      font-size: 50px;
+      background-image: linear-gradient(170deg,  rgba(0, 85, 90, 0.7),  rgba(0, 85, 90, 0.7),rgb(193, 193, 4),yellow);
+      background-clip: text;
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+    }
+
+    /* Text that will have the writing effect */
+    .writing-text {
+      font-family: 'Playfair Display', serif;
+      font-size: 48px;
+      color: white;
+      text-align: center;
+      white-space: nowrap;
+      overflow: hidden;
+      border-right: 3px solid white; /* Cursor effect */
+      width: 0; /* Hidden initially */
+      animation: typing 4s steps(10, end) forwards, blink-caret 0.75s step-end infinite, stopBlink 4s forwards;
+    }
+
+    /* Typing animation */
+    @keyframes typing {
+      from {
+        width: 0;
+      }
+      to {
+        width: 100%;
+      }
+    }
+
+    /* Blinking cursor animation */
+    @keyframes blink-caret {
+      50% {
+        border-color: transparent;
+      }
+    }
+
+    /* Stop blinking after text is fully written */
+    @keyframes stopBlink {
+      from {
+        border-right-color: white;
+      }
+      to {
+        border-right-color: transparent;
+      }
+    }
