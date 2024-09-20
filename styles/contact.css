@@ -1,6 +1,36 @@
-body {
-    position: sticky; 
-    top: 0;
-    margin: 0;
-  
+
+  .contact-overlay{
+    margin-top: 5px;
+    height: 200px;
+    width:100%px;
+    background-color: rgba(0, 85, 90, 0.8);
   }
+  .contact-overlay h1{
+    padding-top: 90px;
+    padding-left: 50px;
+    color: white;
+    font-weight: 800;
+    font-size: 50px;
+    position: relative;
+  }
+  .phone-pic{
+    position: absolute;
+    top: 90px;
+    right: 10%;
+    
+  }
+  .overlay-phone{
+    width: 100px;
+    position: absolute;
+    top: 145px;
+    right: 350px;
+   
+  }
+  .overlay-phone p{
+    text-overflow: ellipsis;
+    padding-left: 20px;
+    font-size: 19px;
+    
+    
+  }
+ 

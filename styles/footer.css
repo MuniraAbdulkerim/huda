@@ -1,10 +1,14 @@
 body {
-  background: #fbfbfd;
+  margin-top: 30px;
+  
 }
 
 .new_footer_area {
+  margin-top: 100px;
   background: #fbfbfd;
+  
 }
+
 
 .new_footer_top {
   padding: 120px 0px 270px;
@@ -21,7 +25,7 @@ body {
   font-size: 14px;
   font-weight: 300;
   line-height: 20px;
-  color: #7f88a6;
+  color: (0,85,90,1);
   padding: 27px 0px;
 }
 
@@ -29,7 +33,7 @@ body {
   font-size: 16px;
   font-weight: 300;
   line-height: 28px;
-  color: #6a7695;
+  color: rgba(0,85,90,1);
   margin-bottom: 20px;
 }
 
@@ -40,12 +44,12 @@ body {
 
 .btn_get_two:hover {
   background: transparent;
-  color: #5e2ced;
+  color: rgba(0,85,90,1);
 }
 
 .btn_get:hover {
-  color: #fff;
-  background: #6754e2;
+  color: rgba(0,85,90,1);
+  background:  rgba(0,85,90,1);
   border-color: #6754e2;
   -webkit-box-shadow: none;
   box-shadow: none;
@@ -57,7 +61,7 @@ a:hover, a:focus, .btn:hover, .btn:focus, button:hover, button:focus {
 }
 
 .new_footer_top .f_widget.about-widget .f_list li a:hover {
-  color: #5e2ced;
+  color: rgba(0,85,90,1);
 }
 
 .new_footer_top .f_widget.about-widget .f_list li {
