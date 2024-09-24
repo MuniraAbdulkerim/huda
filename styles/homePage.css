@@ -1,21 +1,21 @@
 /* Global Styles */
 * {
-  font-family: playfair display,sans-serif !important;
+  font-family: playfair display, sans-serif !important;
   padding: 0;
   margin: 0;
-
 }
-body ,html{
-  position: sticky; 
-  html, body {
-    margin: 0 !important;
-    padding: 0 !important;
-    height: 100% !important;
-  }
-  margin: 0;
-  margin: 0;
-
+main{
+  width: 100%;
 }
+
+
+body, html {
+  position: sticky;
+  margin: 0 !important;
+  padding: 0 !important;
+  height: 100% !important;
+}
+
 #rotating-image {
   width: 100%;
   height: 100vh;
@@ -26,13 +26,11 @@ body ,html{
 .hidden {
   opacity: 0; /* Fully transparent when hidden */
 }
+
 html.sr {
   margin: 0;
   padding: 0;
 }
-
-
-
 
 /* Header Styling */
 header {
@@ -49,399 +47,448 @@ header {
   top: 0;
 }
 
-
-
-.top-pic{
+.top-pic {
   display: flex;
   justify-content: space-between;
   text-align: center;
   align-items: center;
   height: 0px;
 }
- 
- .sec img{
-  height: 100vh;
-  width: 100%;
- }
- .sec{
+
+.sec {
   position: relative; 
   margin-top: 0px;
   width: 100%;
   height: 100vh;
-
   object-fit: contain;
   overflow: hidden;
-  
- }
+}
 
+.sec img {
+  height: 100vh;
+  width: 100%;
+}
 
-  
- 
- .overlay h1{
+.overlay h1 {
   font-weight: 700;
   font-size: 50px;
-  background-image: linear-gradient(170deg,  rgba(0, 85, 90, 0.7),  rgba(0, 85, 90, 0.7),rgb(193, 193, 4),yellow);
+  background-image: linear-gradient(170deg, rgba(0, 85, 90, 0.7), rgba(0, 85, 90, 0.7), rgb(193, 193, 4), yellow);
   background-clip: text;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
- }
+}
 
- .explore h1{
+.explore h1 {
   margin: 60px 300px;
-   font-size: 35px;
-   font-style: normal;
-   color: rgb(65, 65, 65);
- }
- .shoc{
-  border:1px solid lightgray ;
+  font-size: 35px;
+  font-style: normal;
+  color: rgb(65, 65, 65);
+}
+
+.shoc {
+  border: 1px solid lightgray;
   height: 1050px;
-  
-  
- }
-.bole{
-width: 100%;
-
-height: 450px;
-display: flex;
-justify-content: space-around;
-position:relative;
-
 }
-.bole-image{
-width: 50%;
-height: 90%;
 
-
-position: relative;
-
-overflow: hidden;
-
-}
-.images{
+.bole {
+  width: 100%;
+  height: 450px;
+  display: flex;
+  justify-content: space-around;
   position: relative;
 }
-.overlay-image{
+
+.bole-image {
+  width: 50%;
+  height: 90%;
+  position: relative;
+  overflow: hidden;
+}
+
+.images {
+  position: relative;
+}
+
+.overlay-image {
   position: absolute;
-  top:5px;
+  top: 5px;
   left: 20px;
   font-size: 25px;
-  
-  
-
- 
 }
-.images img{
-width: 600px;
-height: 460px;
 
-
+.images img {
+  width: 600px;
+  height: 460px;
 }
-.bole-expl{
+
+.bole-expl {
   width: 400px;
   font-size: 20px;
   margin-right: 10px;
   display: flex;
   flex-direction: column;
   justify-content: space-around;
-  
 }
-.site-name{
+
+.site-name {
   font-size: 27px;
-  color: rgba(0,85,90,255);
+  color: rgba(0, 85, 90, 255);
   padding: 10px 30px;
   font-weight: 700;
   text-align: center;
-
-  
 }
-.site-explain{
+
+.site-explain {
   margin-right: 30px;
 }
-.button button{
+
+.button button {
   cursor: pointer;
   margin-left: 30px;
-  border:none;
+  border: none;
   padding: 8px 20px;
-  color :white;
-  background-color: rgba(0,85,90,255);
+  color: white;
+  background-color: rgba(0, 85, 90, 255);
   font-size: 19px;
   border-radius: 30px;
 }
-.button button:hover{
+
+.button button:hover {
   color: yellow;
 }
-.hayarat{
+
+.hayarat {
   margin-top: 105px;
-  
   width: 100%;
   height: 400px;
   display: flex;
   justify-content: space-around;
-
-
-
 }
-.hayaratimg{
 
-  
+.hayaratimg {
   overflow: hidden;
   position: relative;
 }
-.image2{
-  position:relative
+
+.image2 {
+  position: relative;
 }
-.hayaratover{
+
+.hayaratover {
   position: absolute;
   top: 15px;
   left: 35px;
   font-size: 25px;
 }
-.image2 img{
+
+.image2 img {
   width: 610px;
   height: 405px;
-  
 }
-.hayarat-expl{
 
+.hayarat-expl {
   font-size: 20px;
-  
   display: flex;
   flex-direction: column;
   justify-content: space-around;
-
 }
-.site2-name{
-  font-size: 27px;
 
-  color: rgba(0,85,90,255);
+.site2-name {
+  font-size: 27px;
+  color: rgba(0, 85, 90, 255);
   padding: 10px 30px;
   font-weight: 700;
   text-align: center;
-  
-}
-.site2-explain{
-  width: 400px;
-  
 }
 
-.lo-button{
+.site2-explain {
+  width: 400px;
+}
+
+.lo-button {
   margin-left: 40%;
   margin-top: 50px;
 }
-.lo-button button{
-  border: 2px solid rgba(0,85,90,255);
-  color:rgba(0,85,90,255) ;
+
+.lo-button button {
+  border: 2px solid rgba(0, 85, 90, 255);
+  color: rgba(0, 85, 90, 255);
   background-color: transparent;
   padding: 10px 45px;
   font-size: 19px;
-
 }
-.lo-button button:hover{
-  background-color:rgba(0,85,90,255);
+
+.lo-button button:hover {
+  background-color: rgba(0, 85, 90, 255);
   color: white;
   cursor: pointer;
 }
-.choose{
+
+.choose {
   margin-top: 100px;
   height: 400px;
-  background-color:white;
+  background-color: white;
   border: 1px solid lightgrey;
   display: flex;
   justify-content: space-around;
-text-align: center;
+  text-align: center;
 }
-.alres{
+
+.alres {
   margin-top: 20px;
   display: flex;
-
- 
-   
 }
-.why{
+
+.why {
   display: flex;
   align-items: center;
   font-weight: bolder;
-  font-size:40px;
+  font-size: 40px;
   width: 300px;
-  background-image: linear-gradient(170deg,  rgba(0, 85, 90, 0.7),  rgba(0, 85, 90, 0.7),rgb(193, 193, 4),yellow);
+  background-image: linear-gradient(170deg, rgba(0, 85, 90, 0.7), rgba(0, 85, 90, 0.7), rgb(193, 193, 4), yellow);
   background-clip: text;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
 }
-.alres1{
+
+.alres1 {
   margin-right: 130px;
 }
-.alres1 div span,.alres2 div span{
+
+.alres1 div span,
+.alres2 div span {
   font-size: 21px;
-
-  color:  rgba(0,85,90,255);
+  color: rgba(0, 85, 90, 255);
   font-weight: 700;
-
 }
-.alres1 div span p,.alres2 div span p{
+
+.alres1 div span p,
+.alres2 div span p {
   color: lightgray;
   margin-top: 30px;
 }
-.topal ,.topal2 {
+
+.topal,
+.topal2 {
   margin-bottom: 120px;
   align-items: center;
 }
-.topal2 img ,.botp img,.topal img,.botp2 img{
+
+.topal2 img,
+.botp img,
+.topal img,
+.botp2 img {
   display: block;
   margin: 0 auto;
-  
 }
-.topal img,.botp2 img{
+
+.topal img,
+.botp2 img {
   max-width: 40px;
 }
-.story{
+
+.story {
   margin-top: 120px;
   margin-bottom: 300px;
   position: relative;
-  
-  
 }
-.story::before{
+
+.story::before {
   content: "";
   position: absolute;
   top: 0;
   width: 100%;
   height: 100%;
-  background-color:  rgba(0, 85, 90, 0.8);
+  background-color: rgba(0, 85, 90, 0.8);
   backdrop-filter: blur(0px);
 }
 
-
-
-.story-pic{
+.story-pic {
   height: 400px;
   width: 100%;
- 
 }
-.story-text { 
-  width: 320px ;
+
+.story-text {
+  width: 320px;
   position: absolute;
   top: -50px;
-  right: 50PX;
+  right: 50px;
   bottom: -90px;
   height: 120%;
-  border: 5px solid  rgba(0,85,90,255);
-  background-color:rgba(255, 255, 255,0.7); 
-  color:  rgba(0,85,90,255);
-  border-radius: 50px; 
+  border: 5px solid rgba(0, 85, 90, 255);
+  background-color: rgba(255, 255, 255, 0.7);
+  color: rgba(0, 85, 90, 255);
+  border-radius: 50px;
   text-align: center;
   display: flex;
   align-items: center;
   justify-content: center;
   font-weight: 600;
-
-
 }
-.story-text2{
-position: absolute;
-top: 60px;
-color:gold;
-font-weight: 900;
-padding: 5px 30px;
-left: 20%;
-background-color:rgba(255, 255, 255,1); 
-font-size: 23px;
+
+.story-text2 {
+  position: absolute;
+  top: 60px;
+  color: gold;
+  font-weight: 900;
+  padding: 5px 30px;
+  left: 20%;
+  background-color: rgba(255, 255, 255, 1);
+  font-size: 23px;
 }
-.story-text3{
+
+.story-text3 {
   width: 850px;
   position: absolute;
   top: 170px;
   display: flex;
   justify-content: space-around;
-  
 }
-.story-text3 div{
+
+.story-text3 div {
   width: 200px;
-  background-color:rgba(255, 255, 255,0.7); 
-  color:  rgba(0,85,90,255);
+  background-color: rgba(255, 255, 255, 0.7);
+  color: rgba(0, 85, 90, 255);
   padding: 10px 30px;
 }
 
-
-    /* Section and image styling */
-    .sec {
-      position: relative;
-      width: 100%;
-      height: 100vh; /* Adjust as needed */
-    }
-
-    .sec img {
-      width: 100%;
-      height: 100vh;
-      object-fit: cover;
-    }
-
-    .overlay {
-      position: absolute;
-      top: 0;
-      left: 0;
-      width: 100%;
-      height: 100%;
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      background: rgb(0, 0, 0); /* Dark overlay */
-      font-weight: 700;
-      font-size: 50px;
-      background-image: linear-gradient(170deg,  rgba(0, 85, 90, 0.7),  rgba(0, 85, 90, 0.7),rgb(193, 193, 4),yellow);
-      background-clip: text;
-      -webkit-background-clip: text;
-      -webkit-text-fill-color: transparent;
-    }
-
-    /* Text that will have the writing effect */
-    .writing-text {
-      font-family: 'Playfair Display', serif;
-      font-size: 48px;
-      color: white;
-      text-align: center;
-      white-space: nowrap;
-      overflow: hidden;
-      border-right: 3px solid white; /* Cursor effect */
-      width: 0; /* Hidden initially */
-      animation: typing 4s steps(10, end) forwards, blink-caret 0.75s step-end infinite, stopBlink 4s forwards;
-    }
-
-    /* Scroll reveal effect */
-/* .reveal {
-  opacity: 0;
-  transform: translateY(50px);
-  transition: opacity 0.6s ease-out, transform 0.6s ease-out;
+/* Media Queries for Responsiveness */
+@media (max-width: 720px) and (max-width: 1024px) {
+  .mainPage{
+    width: fit-content;
+  }
 }
 
-.reveal.show {
-  opacity: 1;
-  transform: translateY(0);
-} */
 
-    /* Typing animation */
-    @keyframes typing {
-      from {
-        width: 0;
-      }
-      to {
-        width: 100%;
-      }
-    }
+@media (max-width: 480px) {
+  .mainPage{
+    width: 209%;
+    position: relative;
+    overflow: hidden;
 
-    /* Blinking cursor animation */
-    @keyframes blink-caret {
-      50% {
-        border-color: transparent;
-      }
-    }
+  }
+  .overlay h1 {
+    font-size: 30px;
+  }
 
-    /* Stop blinking after text is fully written */
-    @keyframes stopBlink {
-      from {
-        border-right-color: white;
-      }
-      to {
-        border-right-color: transparent;
-      }
-    }
+  .explore h1 {
+    margin: 40px 20px;
+    font-size: 25px;
+  }
+
+  .bole {
+    flex-direction: column;
+    height: auto;
+  }
+
+  .bole-image {
+    width: 100%;
+    height: auto;
+  }
+
+  .bole-expl {
+    width: 100%;
+    margin: 0;
+    font-size: 18px;
+  }
+
+  .hayarat {
+    flex-direction: column;
+    height: auto;
+  }
+
+  .image2 img {
+    width: 100%;
+    height: auto;
+  }
+
+  .site2-explain {
+    width: 100%;
+  }
+
+  .story-text {
+    width: 50%;
+    top: -30px;
+    right: 5%;
+  }
+
+  .story-text2 {
+    font-size: 20px;
+  }
+
+  .button button {
+    padding: 6px 15px;
+    font-size: 16px;
+  }
+}
+
+@media (max-width: 480px) {
+  .mainPage{
+    width: 266%;
+  }
+  .overlay h1 {
+    font-size: 25px;
+  }
+
+  .explore h1 {
+    font-size: 22px;
+  }
+
+  .bole-expl {
+    font-size: 16px;
+  }
+
+  .story-text {
+    font-size: 16px;
+  }
+}
+
+@media (max-width: 320px) {
+  .overlay h1 {
+    font-size: 20px;
+  }
+
+  .explore h1 {
+    font-size: 20px;
+  }
+
+  .bole-expl {
+    font-size: 14px;
+  }
+
+  .story-text {
+    font-size: 14px;
+  }
+
+  .button button {
+    padding: 5px 10px;
+    font-size: 14px;
+  }
+}
+
+/* Typing animation */
+@keyframes typing {
+  from {
+    width: 0;
+  }
+  to {
+    width: 100%;
+  }
+}
+
+/* Blinking cursor animation */
+@keyframes blink-caret {
+  50% {
+    border-color: transparent;
+  }
+}
+
+/* Stop blinking after text is fully written */
+@keyframes stopBlink {
+  from {
+    border-right-color: white;
+  }
+  to {
+    border-right-color: transparent;
+  }
+}

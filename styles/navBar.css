@@ -1,20 +1,15 @@
-*{
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
+  /* Resetting */
+  * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
 }
 html, body {
-  margin: 0 !important;
-  padding: 0 !important;
+    margin: 0 !important;
+    padding: 0 !important;
 }
 
-.navigation {
-    margin-top: 0px;
-    position: relative; 
-    top: 0;
-}
-
-/* Header Styling */
+/* Styling the header */
 header {
     display: flex;
     justify-content: space-between;
@@ -23,48 +18,81 @@ header {
     height: 100px;
     overflow: hidden;
     width: 100%;
-  
-    
-  }
+}
 
+.logo img {
+    width: 180px;
+    height: 180px;
+    margin-left: 10px;
+}
 
-.navigation ul{
-    display: flex;
+/* Navigation */
+.navigation ul {
     list-style: none;
     margin: 0;
     padding: 0;
-  }
-  .navigation li{
+    display: flex;
+}
+
+.navigation li {
     margin-right: 50px;
-   
-  
-  }
-  .navigation a{
-  font-family: Arial, Helvetica, sans-serif !important;
+}
+
+.navigation a {
     text-decoration: none;
     color: white;
     font-weight: 500;
     font-size: 17px;
-  }
-  .navigation a:hover{
-    color: yellow;
-  }
+}
 
-.logo img{
-    width: 180px;
-    height: 180px;
-    margin-left: 10px;
-    
-  }
-  @media (max-width: 768px) {
+.navigation a:hover {
+    color: yellow;
+}
+
+/* Hamburger icon */
+.hamburger {
+    display: none;
+    cursor: pointer;
+    flex-direction: column;
+}
+
+.hamburger div {
+    width: 35px;
+    height: 5px;
+    background-color: white;
+    margin: 6px 0;
+    transition: 0.4s;
+}
+
+@media (max-width: 768px) {
+    /* Show the hamburger only on mobile */
+    .hamburger {
+        display: flex;
+    }
+
+    /* Hide the navigation links by default on mobile */
     .navigation ul {
-      flex-direction: column;
-      align-items: center;
+        display: none;
+        flex-direction: column;
+        align-items: center;
     }
-  
-    .navigation li {
-      margin-right: 0;
-      margin-bottom: 10px;
+
+    /* When the menu is active, show the nav items */
+    .navigation ul.active {
+        display: flex;
     }
-  }
-  
+
+    /* Transform the hamburger icon */
+    .hamburger.active div:nth-child(1) {
+        transform: rotate(-45deg) translate(-7px, 7px);
+    }
+
+    .hamburger.active div:nth-child(2) {
+        opacity: 0;
+    }
+
+    .hamburger.active div:nth-child(3) {
+        transform: rotate(45deg) translate(-7px, -7px);
+    }
+}
+

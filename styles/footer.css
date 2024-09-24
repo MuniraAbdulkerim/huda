@@ -179,6 +179,9 @@ h1, h2, h3, h4, h5, h6 {
   -webkit-animation: myfirst 30s linear infinite;
   animation: myfirst 30s linear infinite;
 }
+.hudaT{
+  margin-left: 500px;
+}
 
 @-moz-keyframes myfirst {
   0% {
@@ -226,6 +229,32 @@ h1, h2, h3, h4, h5, h6 {
       max-width: 100%;
   }
 }
+@media (max-width: 480px) {
+  .footer {
+      width: 259%;
+  }
+}
+
+@media (max-width: 360px) {
+  .footer {
+      width: 259%;
+
+  }
+  /* .hudaT{
+    margin-left: 300px;
+  } */
+}
+
+@media (min-width: 481px) and (max-width: 768px) {
+  .footer {
+      width: fit-content;
+
+  }
+  .hudaT{
+    margin-left: 300px;
+  }
+}
+
 
 .new_footer_top .f_list {
   list-style: none;
