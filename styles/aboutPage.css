@@ -27,12 +27,11 @@ body {
 }
 .overlay-about{
   position: absolute;
-  top: 40%;
+  top: 20%;
   left: 5%;
-  font-size: 85px;
-  font-weight: 700;
-  color: white;
-
+  font-size: 50px;
+  font-weight: 00;
+  color: rgba(0,85,90,255);
 }
 .trust{
   color: rgba(0,85,90,255);
@@ -42,21 +41,30 @@ font-size: 60px;
 width: 700px;
 }
 .str{
-  width: 530px;
-  line-height: 2em;
-  font-size: 19px;
+  color: white;
+  font-size: 1.2em;
+  padding: 3em 1em;
+  
+  
   transform: scaleY(1.1);
 }
-.ab-story{
-  margin-top: 80px;
-  display: flex;
-  justify-content: space-around;
-  align-items: center;
+.tit{
+  
+  background-color: rgba(0,85,90,0.6999) ;
+  height: 19em;
   
 }
-.tit-pic img{
-  height: 450px;
-  width: 480px;
+.ab-story{
+  margin-top: 8em;
+  margin-bottom: 1em;
+  
+}
+.who{
+  margin-left: 1em;
+  font-size: 0.9em;
+  font-weight: 1000;
+  color: rgb(0, 29, 30) ;
+  margin-bottom: 1em;
 }
 .wham{
   margin-left: 70px;
@@ -73,13 +81,17 @@ width: 700px;
 }
 .card{
   display: flex;
-  justify-content: space-evenly;
+  justify-content: center;
+  gap: 1em;
 }
 .card div img{
   width: 100%;
   height: 150px;
   display: block;
 
+}
+.card1,.card3{
+  margin-top: 5em;
 }
 .card div{
  width: 250px;
@@ -92,12 +104,16 @@ padding: 5px 16px;
 }
 
 .companies{
-  display: flex;
+  
   justify-content: space-around;
   margin-top: 230px;
   align-items: center;
   background-color: rgb(244, 244, 244);
   position: relative;
+}
+.miss{
+  display: flex;
+  justify-content: space-around;
 }
 .log img{
   width: 100px;

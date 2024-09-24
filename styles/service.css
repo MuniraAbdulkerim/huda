@@ -1,6 +1,152 @@
 body {
-    position: sticky; 
-    top: 0;
-    margin: 0;
+  position: sticky; 
+  top: 0;
+  margin: 0;
+  background-color: rgb(244, 244, 244);
+    height: 100vh;
+}
+.helin{
+  margin-left: 11em;
+  margin-top: 6.7em;
+  font-size: 1.5em;
+  max-width: 32em;
+}
+
+
+
+
+.reastat,
+.arctect{
+  margin-top: 10em;
+  display: flex;
+  justify-content: space-around;
+}.reastat .left,
+.reastat .righ {
+  min-width: 300px; 
+  height: 26em;
+}
+.sec2{
+  margin-top: 14em;
+  margin-bottom: 10em;
+}
+
+.lef{
+  max-width: 40%;
+}
+.servc{
+  color: ;
+}
+.head,.const-head,
+.arhead{
+  margin-top: 2em;
+  font-size: 1.599em;
+  font-weight:500;
+}
+.const-head{
+  margin-top: 5em;
+  margin-left: 2em;
+}
+.arhead{
+  margin-left: 2em;
+}
+.explanation,
+.const-explanation,
+.arc-explain{
+  margin-top: 1em;
+  width: 75%;
+  font-size: 1.1em;
+}
+.const-explanation{
+  width: 60%;
+  margin-left: 2em;
+}
+.arc-explain{
+  margin-left: 2em;
+}
+
+.rl-picimg img{
+max-height: 300px;
+max-width: 260px;
+
+}
+.pictr .rl-pic{
+background-color: white;
+border: 1px solid lightgray;
+box-shadow: 2px 2px 2px rgba(0,0,0,0.6);
+}
+
+.text-img{
+height: 8em;
+
+}
+.righ{
   
-  }
+max-width: 60%;
+}
+.hed{
+font-size: 1.6em;
+margin-left: 5em;
+margin-bottom: 0.6em;
+}
+.pictr{
+
+display: flex;
+flex-direction: row;
+justify-content: space-between;
+gap: 1.7em;
+}
+.plc{
+font-size: 1.4em;
+text-align: center;
+}
+.typ{
+margin-top: 1.1em;
+}
+.stat{
+margin-left: 10em;
+color: yellow;
+background-color: rgba(0, 85, 90, 1);
+}
+.deliver{
+margin-top: 2em;
+margin-bottom: 3em;
+margin-left: 52em;
+}
+.constr-pics{
+display: flex;
+justify-content: space-around;
+}
+.constr-pics div img{
+max-height: 300px;
+max-width: 260px;
+
+}
+.constr-pics >div{
+background-color: white;
+box-shadow: 1px 1px 0.8px rgba(0,0,0,0.2);
+border: 0.7px solid lightgrey;
+}
+.textt{
+height: 8em;
+
+}
+.textt .ctyp{
+font-size: 1.1em;
+color: yellow;
+background-color: rgba(0, 85, 90, 1);
+padding-left: 1em;
+}
+.textt .cplc{
+text-align: center;
+margin-top: 0.87em;
+margin-bottom: 0.3em;
+}
+.textt .clint{
+margin-left: 1em;
+}
+.invi{
+margin-top: 4em;
+font-size: 1.09em;
+color: rgba(0, 85, 90, 1);
+font-weight: 600;
+}
